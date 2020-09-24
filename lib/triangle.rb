@@ -11,8 +11,6 @@ end
 def validate 
  if self.first <= 0 || self.second <= 0 || self.third <= 0 || self.first + self.second <= self.third || self.first + self.third <= self.second || self.second + self.third <= self.first  
   raise TriangleError
-  rescue TriangleError => error 
-  puts error.message
 end
 end
 
